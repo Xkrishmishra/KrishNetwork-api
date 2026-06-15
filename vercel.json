@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/api/index.js" },
+    { "src": "/instagram/info", "dest": "/api/instagram/info.js" },
+    { "src": "/instagram/stream", "dest": "/api/instagram/stream.js" },
+    { "src": "/pinterest/stream", "dest": "/api/pinterest/stream.js" },
+    { "src": "/spotify/search", "dest": "/api/spotify/search.js" },
+    { "src": "/spotify/info", "dest": "/api/spotify/info.js" },
+    { "src": "/spotify/stream", "dest": "/api/spotify/stream.js" },
+    { "src": "/tiktok/download", "dest": "/api/tiktok/download.js" },
+    { "src": "/x/download", "dest": "/api/x/download.js" },
+    { "src": "/youtube/stream", "dest": "/api/youtube/stream.js" }
+  ]
+}
